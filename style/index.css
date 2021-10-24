@@ -12,44 +12,44 @@
 }
 .tips{
     width:50px;
-    height: 100px;
-    background-color:lightcoral;
+    height: 150px;
+    /* background-color:lightcoral; */
     position: absolute;
     top:10%;
 }
-.icon-1{
+.tips_row_1, .tips_row_2{
     width: 50px;
     height: 50px;
-    background-color:brown;
-    position: absolute;
-}
-.icon-2{
-    width: 50px;
-    height: 50px;
-    background-color:cadetblue;
-    position: absolute;
-    top: 50%;
 }
 .content-1{
     z-index: -1;
     width: 200px;
     height: 50px;
     background-color:lightgreen;
-    position: absolute;
+    position: relative;
     left: -150px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .content-2{
     z-index: -1;
     width: 200px;
     height: 50px;
     background-color:lightgreen;
+    position: relative;
+    left: -150px;
+    transition: 0.3s;
+}
+.content-3{
+    z-index: -1;
+    width: 200px;
+    height: 50px;
+    background-color:lightgreen;
     position: absolute;
-    top: 50%;
     left: -150px;
     transition: 0.5s;
 }
-.icon-1:hover .content-1{
+
+#row_1:hover .content-1,#row_2:hover .content-2{
     left: 50px;
     /* transition: 0.6s; */
 }
@@ -62,8 +62,15 @@
     background-color: #fff;
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 .btn{
     flex: 1;
+    height: 60px;
+    line-height: 60px;
     border-right:1px solid black ;
+}
+.btn_ctx{
+    width: 100%;
+    height: 80%;
 }
